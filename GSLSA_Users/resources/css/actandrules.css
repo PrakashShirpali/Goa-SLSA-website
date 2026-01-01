@@ -1,0 +1,46 @@
+.main-container {
+    padding: 2em;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.main-container .list-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.main-container .list-container h1 {
+    font-size: 2.3rem;
+    text-decoration: underline;
+    text-underline-offset: 0.3em;
+    color: var(--bs-main-container-list-container-h1-c);
+}
+
+.main-container .list-container ol {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.main-container .list-container li {
+    color: var(--bs-main-container-list-container-li-c);
+    transition: transform 0.2s ease-in-out;
+}
+
+.main-container .list-container li.active {
+    color: var(--bs-mainTheme);
+}
+
+.main-container .list-container li:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+    text-decoration: underline;
+}
+
+
+@media (max-width: 991.98px) {
+    .main-container {
+        width: 100%;
+    }
+}

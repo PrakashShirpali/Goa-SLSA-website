@@ -1,0 +1,107 @@
+.recruitment {
+    margin: 0 auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    width: 60%;
+    background-color: rgba(0, 0, 0, 0.623);
+    overflow: hidden;
+    position: relative;
+}
+
+.recruitment::before {
+    content: "";
+    width: 100%;
+    height: 90%;
+    position: absolute;
+    top: 2em;
+    left: 0;
+    background-color: var(--bs-white);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    z-index: -1;
+}
+
+.recruitment::before {
+    background-image: url("/images/jfall.png");
+}
+.latest_updates::before {
+    background-image: url("/images/latestU.png");
+}
+.newsletter::before {
+    background-image: url("/images/newsletter.png");
+}
+
+.recruitment .title {
+    padding: 0.1em;
+    background-color: var(--bs-mainTheme);
+    color: var(--bs-recruitment-title-c);
+    text-align: center;
+    font-size: 1.5em;
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
+    position: relative;
+}
+
+.recruitment ul {
+    width: 100%;
+    height: 19em;
+    display: flex;
+    gap: 1.8em;
+    flex-direction: column;
+    padding: 1em 1em 1em 1em;
+    overflow-y: auto;
+    margin: 0;
+}
+
+.recruitment a {
+    text-decoration: none;
+}
+
+.recruitment li {
+    font-size: 0.9em;
+    color: #ddfdfe;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    list-style-type: none;
+    padding: 0.3em 0.3em 0.3em 1em;
+    box-shadow: inset 0em 0.1em 0.1em 0em var(--bs-lightGrey);
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 80%;
+    font-family: system-ui;
+}
+
+.recruitment li:hover {
+    transform: scale(1.02);
+}
+
+.recruitment li .new-gif {
+    background-color: red;
+    margin-left: 0.5em;
+    border-radius: 0.3em;
+    padding: 0 0.2em;
+    animation: blink 0.9s linear infinite;
+}
+
+@keyframes blink {
+    0%,
+    100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.2;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .recruitment {
+        width: 90%;
+        margin-inline: 0.5em;
+    }
+
+    .recruitment li {
+        width: auto;
+    }
+}

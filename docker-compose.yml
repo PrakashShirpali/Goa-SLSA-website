@@ -1,0 +1,17 @@
+services:
+  almalinux:
+    build: .
+    container_name: GSLSA_website
+    image: gslsa
+    volumes:
+      - ./apache.conf:/etc/httpd/conf/httpd.conf
+      - ./GSLSA_Admin:/var/www/html/GSLSA_Admin
+      - ./GSLSA_Users:/var/www/html/GSLSA_Users
+      - ./pg_data:/var/lib/pgsql/16/data
+      - ./redis.conf:/etc/redis/redis.conf
+    ports:
+      - "1000:80" # Maps host port 1000 to container port 80 (Apache)
+      - "2000:800" # Maps host port 2000 to container port 800 (Apache)
+      - "5000:5432" # Maps host port 5000 to container port 5432 (PostgreSQL)
+      - "5175:5175"
+      - "5176:5176"

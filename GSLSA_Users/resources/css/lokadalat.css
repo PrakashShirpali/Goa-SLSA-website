@@ -1,0 +1,17 @@
+.lok-adalat-container {
+    padding: 2em;
+    width: 80%;
+    margin: 0 auto;
+    color: var(--bs-lok-adalat-container-c);
+}
+
+.lok-titles {
+    color: var(--bs-lok-titles-c);
+}
+
+@media (max-width: 991.98px) {
+    .lok-adalat-container {
+        width: 100%;
+    }
+    
+}

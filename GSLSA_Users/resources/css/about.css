@@ -1,0 +1,230 @@
+.card-img-top {
+    height: 15em;
+}
+
+.role {
+    background-color: var(--bs-mainTheme);
+    color: var(--gslsa-navbar-bg);
+    padding: 0.2em;
+    font-size: 1.1rem;
+}
+
+.title {
+    padding-top: 0.2em;
+}
+
+.name {
+    color: var(--bs-mainTheme);
+    font-size: 1.3rem;
+    padding-bottom: 0.2em;
+}
+
+.card-img-top {
+    border-radius: 0;
+}
+
+.introduction {
+    padding: 2em;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.introduction .title {
+    color: var(--bs-introduction-title-c);
+}
+
+.introduction .desc {
+    color: var(--bs-introduction-desc-c);
+    font-size: 1.05em;
+}
+
+.honorables {
+    padding: 0 1em 1em 1em;
+    width: 70vw;
+    margin: 0 auto;
+}
+
+.honorables-container {
+    background-color: var(--bs-honorables-container-bg);
+}
+
+.honorables-container .card {
+    width: 17em;
+    text-align: center;
+    border: none;
+    box-shadow: 0em 0em 1em 0em var(--bs-honorables-container-card-bs);
+    transition: transform 0.2s ease-in-out;
+    border-radius: 0.4em;
+}
+
+.honorables-container .card:hover {
+    transform: scale(1.02);
+}
+
+.honorables-container .card .head {
+    background-color: var(--bs-mainTheme);
+    padding: 0.4em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2em;
+    border-radius: 0.4em 0.4em 0 0;
+}
+
+.honorables-container .card .head .role {
+    color: var(--bs-white);
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.honorables-container .card .card-img-top {
+    height: 13em;
+    border-radius: 0;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5em;
+    height: 6em;
+}
+
+.honorables-container .card .body .name {
+    color: var(--bs-mainTheme);
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.arrowSliders {
+    color: var(--bs-videotag-c);
+    font-size: 2rem;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    width: fit-content;
+}
+
+.row {
+    --bs-gutter-x: 0;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0;
+    margin-right: 0;
+    margin-left: 0;
+    padding: 1em;
+    justify-content: space-evenly;
+}
+
+.carousel {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.carousel-indicators {
+    position: relative;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: var(--bs-videotag-c) !important;
+}
+
+.col-md-12,
+.col-md-6,
+.col-md-4,
+.col-md-3 {
+    display: flex;
+    justify-content: center;
+}
+
+.main_title {
+    text-align: center;
+    margin-top: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: var(--bs-introduction-title-c);
+}
+
+.sub_title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    color: var(--bs-mainTheme);
+    text-decoration: underline;
+    margin-bottom: 1em;
+}
+
+.trs {
+    display: flex;
+}
+
+.tds {
+    width: 31em;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    padding: 0.5em 10em 0.5em 2em !important;
+}
+
+.span1 {
+    color: var(--bs-introduction-title-c);
+    font-size: 1rem;
+}
+
+.span2 {
+    color: var(--bs-mainTheme);
+    font-size: 1.1rem;
+}
+
+.span3 {
+    color: var(--bs-introduction-title-c);
+    font-size: 0.9rem;
+}
+
+.span4 {
+    color: var(--bs-mainTheme);
+    font-size: 1.05rem;
+}
+
+.contain {
+    padding: 1em;
+}
+
+@media (max-width: 991.98px) {
+    .honorables-container .card {
+        margin: 0;
+    }
+
+    .tds {
+        width: 50%;
+        padding: 1em !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .main_title {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 479.98px) {
+    .honorables {
+        width: 100%;
+    }
+
+    .sub_title {
+        font-size: 1.1rem;
+    }
+}
